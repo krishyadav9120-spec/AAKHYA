@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f9dbe8">
+<title>Aakhya, A Little Something for You ♡</title>
+<style>
+:root{--ink:#50384c;--muted:#8b7084;--pink:#e98db6;--purple:#ad91df;--paper:rgba(255,255,255,.88)}
+*{box-sizing:border-box}body{margin:0;min-height:100svh;display:grid;place-items:center;padding:20px;overflow-x:hidden;font-family:ui-rounded,"Segoe UI",system-ui,sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 10%,#fff5fa 0,transparent 30%),linear-gradient(135deg,#ffe1ed,#e8ddff 58%,#fff0f5)}
+.hearts{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}.float-heart{position:absolute;bottom:-50px;opacity:0;color:#e68cb6;animation:floatUp linear infinite}@keyframes floatUp{0%{transform:translateY(0) rotate(0);opacity:0}10%{opacity:.45}90%{opacity:.35}100%{transform:translateY(-115vh) rotate(30deg);opacity:0}}
+.card{position:relative;z-index:1;width:min(100%,520px);padding:clamp(24px,6vw,42px);border:1px solid rgba(255,255,255,.9);border-radius:30px;background:var(--paper);box-shadow:0 22px 70px #91658b22;backdrop-filter:blur(12px);text-align:center;animation:appear .6s ease both}@keyframes appear{from{opacity:0;transform:translateY(15px) scale(.99)}to{opacity:1;transform:translateY(0) scale(1)}}
+.screen{display:none}.screen.active{display:block;animation:appear .45s ease both}.emoji{font-size:48px;margin-bottom:12px;filter:drop-shadow(0 5px 8px #df9bbb30)}.eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#b17c9f;font-weight:800;margin-bottom:17px}h1{font-size:clamp(27px,7vw,36px);line-height:1.15;margin:0 0 16px;letter-spacing:-.7px}.letter{color:var(--muted);line-height:1.9;font-size:15.5px;text-align:left;white-space:pre-line;margin:0 auto 24px;max-width:410px}.progress{height:5px;background:#f3e5ef;border-radius:20px;margin:0 0 26px;overflow:hidden}.bar{height:100%;width:25%;background:linear-gradient(90deg,var(--pink),var(--purple));border-radius:20px;transition:width .35s ease}button{border:0;border-radius:30px;padding:14px 18px;font:inherit;font-weight:750;font-size:15px;cursor:pointer;transition:transform .2s,box-shadow .2s;width:100%}button:hover{transform:translateY(-2px)}button:focus-visible{outline:3px solid #9d7bd0;outline-offset:3px}.primary{color:white;background:linear-gradient(100deg,#e98db6,#ac91df);box-shadow:0 9px 20px #d8a3ca40}.secondary{margin-top:10px;background:#f4eaf2;color:#86647f}.small{font-size:12px;color:#aa91a4;margin-top:17px}.signature{margin-top:22px;text-align:right;color:#b16e9c;font-style:italic;line-height:1.8}.heartline{color:#d87dab;letter-spacing:8px;margin:12px 0 22px;font-size:18px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="hearts" aria-hidden="true" id="hearts"></div>
+<main class="card">
+  <div class="progress" aria-label="Progress"><div class="bar" id="bar"></div></div>
+  <section class="screen active" data-step="1">
+    <div class="emoji">💌</div><div class="eyebrow">A little something for you</div>
+    <h1>Hey, Aakhya ❤️</h1>
+    <div class="letter">Aakhya, I made this little corner of the internet just for you.
+
+There is nothing you need to write, no questions to answer, and no right or wrong way to feel. Just tap the button and let me tell you a few things that are always in my heart.
+
+Ready, love? ♡</div>
+    <button class="primary" type="button" data-next>Open your letter ♡</button>
+    <div class="small">Made with love, just for you ✨</div>
+  </section>
+  <section class="screen" data-step="2">
+    <div class="emoji">🌷</div><div class="eyebrow">Page 2 of 4 · The little things</div>
+    <h1>You make ordinary days special</h1>
+    <div class="letter">It's funny how one person can make an ordinary day feel a little brighter. A message from you, your laugh, the way you tell me about your day—even the smallest moments with you find a special place in my heart.
+
+I may not always find the perfect words, but I hope you feel it in the little things I do: I care about you, I listen to you, and I love having you in my life.
+
+You don't have to be perfect for me. You can have quiet days, difficult days, and days when everything feels a little too much. You are still my favourite person, Aakhya. ♡</div>
+    <button class="primary" type="button" data-next>There's more I want to say →</button><button class="secondary" type="button" data-prev>← Read that again</button>
+  </section>
+  <section class="screen" data-step="3">
+    <div class="emoji">🌙</div><div class="eyebrow">Page 3 of 4 · A promise from me</div>
+    <h1>I'm choosing us</h1>
+    <div class="letter">I can't promise that every day will be easy, or that I'll always know exactly what to say. But I can promise to keep trying—to listen when you need to be heard, to be honest with you, and to never take the little moments we share for granted.
+
+I want more memories with you: silly conversations, long talks, spontaneous plans, comfortable silence, and all the little adventures we haven't had yet.
+
+Most of all, I want you to feel safe being yourself with me. You never have to pretend to be someone else to deserve love. Thank you for being you, and for being part of my world.</div>
+    <button class="primary" type="button" data-next>One last page, just for you ❤️</button><button class="secondary" type="button" data-prev>← Go back</button>
+  </section>
+  <section class="screen" data-step="4">
+    <div class="emoji">❤️</div><div class="eyebrow">Page 4 of 4 · From my heart</div>
+    <h1>For you, Aakhya ❤️</h1>
+    <div class="heartline">♡ ♥ ♡</div>
+    <div class="letter">If I could give you one thing, it would be the ability to see yourself through my eyes, even for a moment. Maybe then you'd understand how much happiness you bring into my life and how precious you are to me.
+
+I love the person you are, the little things that make you different, and the memories we keep creating together. I don't need a perfect love story. I want something real—with laughter, patience, honesty, forgiveness, and two people who keep choosing each other.
+
+So if you ever wonder what you mean to me, come back to this little page. Let it remind you that Naksh is grateful for you, proud to be with you, and looking forward to all the chapters still waiting for us, Aakhya.
+
+I love you—not just in the big, dramatic moments, but in the ordinary ones too. Today, tomorrow, and through all the little moments in between. ♡</div>
+    <div class="signature">Yours, always,<br>Naksh ❤️<br>With all my love</div>
+    <button class="primary" type="button" id="again">Read it from the beginning ↺</button>
+    <div class="small">This little page is yours. Come back whenever you need a reminder. ✨</div>
+  </section>
+</main>
+<script>
+let currentStep=1;
+const screens=[...document.querySelectorAll('.screen')];
+const bar=document.getElementById('bar');
+function showStep(step){currentStep=Math.max(1,Math.min(4,step));screens.forEach(s=>s.classList.toggle('active',Number(s.dataset.step)===currentStep));bar.style.width=`${currentStep*25}%`;window.scrollTo({top:0,behavior:'smooth'});}
+document.querySelectorAll('[data-next]').forEach(b=>b.addEventListener('click',()=>showStep(currentStep+1)));
+document.querySelectorAll('[data-prev]').forEach(b=>b.addEventListener('click',()=>showStep(currentStep-1)));
+document.getElementById('again').addEventListener('click',()=>showStep(1));
+const hearts=document.getElementById('hearts');
+for(let i=0;i<17;i++){const h=document.createElement('span');h.className='float-heart';h.textContent=['♡','♥','✧'][i%3];h.style.left=(Math.random()*100)+'%';h.style.animationDuration=(10+Math.random()*13)+'s';h.style.animationDelay=(-Math.random()*18)+'s';h.style.fontSize=(14+Math.random()*20)+'px';hearts.appendChild(h);}
+</script>
+</body>
+</html>
